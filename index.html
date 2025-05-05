@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Principio del Palomar</title>
+    <link rel="stylesheet" href="estilo.css">
+      
+</head>
+<body>
+
+    <header>
+        <h1>Principio del Palomar - Ejercicios</h1>
+    </header>
+
+    <nav>
+        <a href="#ejercicio1">Ejercicio 1</a>
+        <a href="#ejercicio2">Ejercicio 2</a>
+    </nav>
+
+    <div class="container">
+        <section id="ejercicio1">
+            <h2>EJERCICIO 1</h2>
+            <p><span class="paso">Demostración:</span></p>
+            <ol>
+                <li><span class="paso">Definir las "casillas":</span> Las posibles sumas de los dígitos de un número impar de tres dígitos.</li>
+                <li><span class="paso">Número máximo de "casillas":</span>
+                    <ul>
+                        <li><span class="paso">Suma mínima:</span> 1 + 0 + 1 = 2 (para el número 101).</li>
+                        <li><span class="paso">Suma máxima:</span> 9 + 9 + 9 = 27 (para el número 999).</li>
+                        <li><span class="paso">Total de "casillas":</span> 27 − 2 + 1 = 26.</li>
+                    </ul>
+                </li>
+                <li><span class="paso">Aplicar el principio del palomar generalizado:</span> Se tienen n = 209 números ("objetos") y k = 26 posibles sumas ("casillas"). Por lo tanto, al menos una suma debe aparecer en $\lceil \frac{n}{k} \rceil$ números.</li>
+                <li><span class="paso">Cálculo:</span> $\lceil \frac{209}{26} \rceil = \lceil 8.038... \rceil = 9$</li>
+            </ol>
+            <p class="conclusion">Conclusión: Al menos 9 de los 209 números impares de tres dígitos deben tener la misma suma de sus dígitos.</p>
+        </section>
+
+        <section id="ejercicio2">
+            <h2>EJERCICIO 2</h2>
+            <p><span class="paso">Demostración (Principio del Palomar):</span></p>
+            <ol>
+                <li><span class="paso">Casillas:</span> Posibles sumas de dígitos de enteros positivos ≤ 100.</li>
+                <li><span class="paso">Número de casillas:</span>
+                    <ul>
+                        <li><span class="paso">Suma mínima:</span> 1 (para el número 1).</li>
+                        <li><span class="paso">Suma máxima:</span> 18 (para el número 99).</li>
+                        <li><span class="paso">Total:</span> 18 − 1 + 1 = 18.</li>
+                    </ul>
+                </li>
+                <li><span class="paso">Objetos:</span> n = 28 enteros positivos ≤ 100.</li>
+                <li><span class="paso">Aplicación del principio del palomar:</span> Como el número de objetos (28) es mayor que el número de casillas (18), al menos una casilla debe contener más de un objeto.</li>
+            </ol>
+            <p class="conclusion">Conclusión: Al menos dos de los 28 enteros tienen la misma suma de sus dígitos.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Ejercicios Principio del Palomar</p>
+    </footer>
+
+</body>
+</html>
